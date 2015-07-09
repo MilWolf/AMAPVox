@@ -26,9 +26,25 @@
     <distributionManagement>        
         <repository>            
             <id>dropbox</id>                        
-            <url>file:///home/calcul/Dropbox/AMAPVox/mvn-repository</url>                      
+            <url>file:///home/calcul/Documents/Julien/MavenRepo</url>                      
         </repository>           
     </distributionManagement> 
+    
+    <repositories>
+        <repository>            
+            <id>dropbox</id>                        
+            <url>file:///home/calcul/Documents/Julien/MavenRepo</url>                        
+        </repository>           
+    </repositories>   
+    
+    <pluginRepositories>
+        <pluginRepository>
+            <id>dropbox</id>                        
+            <url>file:///home/calcul/Documents/Julien/MavenRepo</url>  
+        </pluginRepository>
+    </pluginRepositories>
+    
+    
     
     <build>
         <pluginManagement>
