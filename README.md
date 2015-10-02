@@ -4,9 +4,7 @@
 
 #####Modules:
 <ul>
-<li>AMAPVoxGUI : </li><br>
-   &emsp; Interface to access to voxelization<br><br>
-  
+
 <li>JLas :</li><br>
    &emsp; This is a (las, laz) point reader<br>
    &emsp; @see: [http://www.asprs.org/Committee-General/LASer-LAS-File-Format-Exchange-Activities.html](http://www.asprs.org/Committee-General/LASer-LAS-File-Format-Exchange-Activities.html)<br><br>
