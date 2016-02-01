@@ -13,7 +13,6 @@
     </properties>
     
     <modules>
-        <module>DataStructure</module>
         <module>VoxViewer</module>
         <module>Simulation</module>
         <module>AMAPVoxGUI</module>
