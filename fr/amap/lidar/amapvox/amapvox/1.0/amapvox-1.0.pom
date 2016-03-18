@@ -10,20 +10,18 @@
         <github.global.server>github</github.global.server>
         <github.site.userName>MilWolf</github.site.userName>
         <github.global.userName>MilWolf</github.global.userName>
+        <name>MilWolf</name>
     </properties>
     
     <modules>
         <module>VoxViewer</module>
-        <module>Simulation</module>
         <module>AMAPVoxGUI</module>
-        <module>JDart</module>
-        <module>Voxelisation</module>
         <module>JeebLight</module>
-        <module>Chart</module>
         <module>VoxReader</module>
         <module>VoxWriter</module>
         <module>VoxChecking</module>
         <module>commons</module>
+        <module>AMAPVox</module>
     </modules>  
     
     <scm>
@@ -51,7 +49,7 @@
                 <executions>
                     <execution>
                         <id>attach-sources</id>
-                        <phase>package</phase>
+                        <phase>deploy</phase>
                         <goals>
                             <goal>jar</goal>
                         </goals>
@@ -64,7 +62,7 @@
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>
-                        <phase>package</phase>
+                        <phase>deploy</phase>
                         <goals>
                             <goal>jar</goal>
                         </goals>
@@ -79,6 +77,15 @@
                         internal.repo::default::file://${project.build.directory}/mvn-repo
                     </altDeploymentRepository>
                 </configuration>
+                <executions> 
+                    <execution> 
+                        <id>deploy</id>
+                        <phase>deploy</phase>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals> 
+                    </execution> 
+                </executions> 
             </plugin>
             <plugin>
                 <groupId>com.github.github</groupId>
